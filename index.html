@@ -55,18 +55,22 @@
       color: #d8c65d !important;
     }
 
-.img-td-wi{
-  width: 15%;
-}
-.name-td-wi{
-width: 45%;
-}
-.qty-td-wi{
-  width: 15%;
-}
-.pri-td-wi{
-  width: 35%;
-}
+    .img-td-wi {
+      width: 15%;
+    }
+
+    .name-td-wi {
+      width: 45%;
+    }
+
+    .qty-td-wi {
+      width: 15%;
+    }
+
+    .pri-td-wi {
+      width: 35%;
+    }
+
     .img-logo-box {
       width: 20%;
     }
@@ -214,6 +218,10 @@ width: 45%;
         padding: 0px 0px;
       }
 
+      .img-td-box {
+        padding-left: 10px !important;
+      }
+
       #u_content_button_3 .v-container-padding-padding {
         padding: 30px 10px 40px !important;
       }
@@ -230,24 +238,39 @@ width: 45%;
         padding: 20px 10px 40px !important;
       }
     }
-    @media (max-width:280px){
-.img-td-wi{
-  width: 5% !important;
-}
-.name-td-wi{
-width: 45%;
-font-size: 14px;
-}
-.qty-td-wi{
-  width: 20%;
-font-size: 14px;
 
-}
-.pri-td-wi{
-  width: 30%;
-font-size: 14px;
+    @media (max-width:280px) {
+      .img-td-wi {
+        width: 5% !important;
+      }
 
-}
+      .name-td-wi {
+        width: 45%;
+        font-size: 14px;
+      }
+
+      .qty-td-wi {
+        width: 20%;
+        font-size: 14px;
+
+      }
+
+      .pri-td-wi {
+        width: 30%;
+        font-size: 14px;
+
+      }
+    }
+
+    @media (max-width:991px) and (min-width:480px) {
+      .img-td-box {
+        padding-left: 60px !important;
+      }
+    }
+    @media (max-width:1024px) and (min-width:1024px) {
+      .img-td-box {
+        padding-left: 60px !important;
+      }
     }
   </style>
 
@@ -278,7 +301,8 @@ font-size: 14px;
                       <tbody>
                         <tr>
                           <td
-                            style="vertical-align: middle; padding-right: 0px;padding-left: 50px; padding-top: 30px; padding-bottom: 30px;">
+                            style="vertical-align: middle; padding-right: 0px;padding-left: 50px; padding-top: 30px; padding-bottom: 30px;"
+                            class="img-td-box">
                             <div class="img-logo-box">
                               <a href="#" title="logo" target="_blank"><img src="images/logo.png" alt=""></a>
                             </div>
@@ -366,20 +390,25 @@ font-size: 14px;
                               <div style="display: flex; justify-content: space-between;flex-wrap: wrap;float: auto;">
                                 <div style="margin-top: 10px;width: 50%;">
                                   <div class="v-line-height v-font-size text-td-box"
-                                  style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
-                                  <p style="line-height: 130%;font-size: 14px;font-weight: 600;color: #585858;">Order ID</p>
-                                  <p style="line-height: 130%;font-size: 14px; ">1212-54512-5454</p>
-                                </div>
-                                <div style="margin-top: 10px;">
-                                  <p style="font-size: 14px;margin-bottom: 5px;color: #585858;font-weight: 600;">Arriving:</p>
-                                  <p style=" color: #008c00; font-size: 14px;">Monday,December 4</p>
-                                </div>
+                                    style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
+                                    <p style="line-height: 130%;font-size: 14px;font-weight: 600;color: #585858;">Order
+                                      ID</p>
+                                    <p style="line-height: 130%;font-size: 14px; ">1212-54512-5454</p>
+                                  </div>
+                                  <div style="margin-top: 10px;">
+                                    <p style="font-size: 14px;margin-bottom: 5px;color: #585858;font-weight: 600;">
+                                      Arriving:</p>
+                                    <p style=" color: #008c00; font-size: 14px;">Monday,December 4</p>
+                                  </div>
                                 </div>
                                 <div style="margin-top: 10px; width: 50%;">
-                                  <p style="line-height: 130%;font-size: 14px; color: #585858;font-weight: 600; margin-bottom: 5px;">Your
+                                  <p
+                                    style="line-height: 130%;font-size: 14px; color: #585858;font-weight: 600; margin-bottom: 5px;">
+                                    Your
                                     order will be sent to:</p>
                                   <p style="line-height: 130%;font-size: 16px ;">Shivam Pawar</p>
-                                  <p style="text-transform: uppercase;line-height: 130%;font-size: 16px ;">Ahmedabad,Gujrat</p>
+                                  <p style="text-transform: uppercase;line-height: 130%;font-size: 16px ;">
+                                    Ahmedabad,Gujrat</p>
                                   <p style="line-height: 130%;font-size: 16px ;">India</p>
                                 </div>
                               </div>
@@ -413,7 +442,8 @@ font-size: 14px;
                               align="left">
                               <div class="v-line-height v-font-size text-td-box"
                                 style="font-size: 14px; line-height: 140%;word-wrap: break-word;">
-                                <p style="line-height: 130%;font-weight: 600; font-size: 20px; color: #585858;">Order Summary</p>
+                                <p style="line-height: 130%;font-weight: 600; font-size: 20px; color: #585858;">Order
+                                  Summary</p>
                               </div>
                             </td>
                           </tr>
@@ -431,21 +461,24 @@ font-size: 14px;
                             <th class="price-text pri-td-wi" style="font-size: 17px; color: #585858;">Price</th>
                           </tr>
                           <tr>
-                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt="" width="60px">
+                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt=""
+                                width="60px">
                             </td>
                             <td class="item-td name-td-wi" style="width: 45%;">cooker Kitchen set</td>
                             <td class="item-td qty-td-wi" style="width: 15%;">1</td>
                             <td class="item-td price-text pri-td-wi" style="width: 25%;">25 $</td>
                           </tr>
                           <tr>
-                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt="" width="60px">
+                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt=""
+                                width="60px">
                             </td>
                             <td class="item-td name-td-wi" style="width: 45%;">cooker Kitchen set</td>
                             <td class="item-td qty-td-wi" style="width: 15%;">1</td>
                             <td class="item-td price-text pri-td-wi" style="width: 25%;">25 $</td>
                           </tr>
                           <tr>
-                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt="" width="60px">
+                            <td class="item-td img-td-wi " style="width: 15%;"><img src="images/cat-1.jpg" alt=""
+                                width="60px">
                             </td>
                             <td class="item-td name-td-wi" style="width: 45%;">cooker Kitchen set</td>
                             <td class="item-td qty-td-wi" style="width: 15%;">1</td>
